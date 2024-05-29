@@ -174,7 +174,14 @@ body {
 }
 .project .content .project1 a,
 .project2 a,
-.project3 a {
+.project3 a,
+.project4 a,
+.project5 a,
+.project6 a,
+.project7 a,
+.project8 a,
+.project9 a,
+.project10 a {
   font-size: 2.5rem;
   font-weight: 600;
   margin-left: 10rem;
@@ -184,7 +191,14 @@ body {
 }
 .project .content .project1 p,
 .project2 p,
-.project3 p {
+.project3 p,
+.project4 p,
+.project5 p,
+.project6 p,
+.project7 p,
+.project8 p,
+.project9 p,
+.project10 p {
   font-size: 1.7rem;
   font-weight: 400;
   color: #fff;
@@ -194,7 +208,10 @@ body {
 }
 .project .content .project1 img,
 .project2 img,
-.project3 img {
+.project3 img .project4 img,
+.project5 img .project6 img,
+.project7 img .project8 img,
+.project9 img .project10 img {
   width: 20rem;
   display: flex;
   margin-left: 80rem;
