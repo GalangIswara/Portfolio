@@ -152,34 +152,26 @@ body {
 /* About End */
 
 /* Project Section */
+/* Project Section */
 .project {
   background-color: var(--bg);
   height: 550vh;
   width: 100%;
-  /* padding-top: 0; */
-  /* margin: 0; */
 }
+
 .project .content h2 {
   text-align: center;
   font-size: 3.5rem;
   font-weight: 700;
   color: var(--primary);
   padding-bottom: 2rem;
-  /* margin-top: 3rem; */
 }
+
 .project .content h2 span {
   color: #fff;
 }
-.project .content .project1 a,
-.project2 a,
-.project3 a,
-.project4 a,
-.project5 a,
-.project6 a,
-.project7 a,
-.project8 a,
-.project9 a,
-.project10 a {
+
+.project .content .project a {
   font-size: 2.5rem;
   font-weight: 600;
   margin-left: 10rem;
@@ -187,16 +179,8 @@ body {
   color: #fff;
   padding-bottom: 7rem;
 }
-.project .content .project1 p,
-.project2 p,
-.project3 p,
-.project4 p,
-.project5 p,
-.project6 p,
-.project7 p,
-.project8 p,
-.project9 p,
-.project10 p {
+
+.project .content .project p {
   font-size: 1.7rem;
   font-weight: 400;
   color: #fff;
@@ -204,19 +188,13 @@ body {
   width: 50rem;
   padding-bottom: 20rem;
 }
-.project .content .project1 img,
-.project2 img,
-.project3 img,
-.project4 img,
-.project5 img,
-.project6 img,
-.project7 img,
-.project8 img,
-.project9 img,
-.project10 img {
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
+
+.project .content .project img {
+  width: 20rem;
+  margin: 0 auto; /* Untuk memusatkan gambar */
+  display: block;
+  border: 5px solid #fff;
+  margin-bottom: 3rem;
 }
 
 /* Project End */
