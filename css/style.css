@@ -206,16 +206,17 @@ body {
 }
 .project .content .project1 img,
 .project2 img,
-.project3 img .project4 img,
-.project5 img .project6 img,
-.project7 img .project8 img,
-.project9 img .project10 img {
-  width: 20rem;
-  display: flex;
-  margin-left: 80rem;
-  margin-top: -30rem;
-  border: 5px solid #fff;
-  margin-bottom: 3rem;
+.project3 img,
+.project4 img,
+.project5 img,
+.project6 img,
+.project7 img,
+.project8 img,
+.project9 img,
+.project10 img {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 /* Project End */
