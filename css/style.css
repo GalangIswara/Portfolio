@@ -15,294 +15,225 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "poppins", sans-serif;
-  /* background-color: var(--bg); */
-  background-color: #fff;
-  color: black;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.2rem 7%;
-  background-color: var(--bg);
-  border-bottom: 1px solid var(--primary);
+  padding: 1rem 2rem;
+  background: #333;
+  color: #fff;
   position: fixed;
+  width: 100%;
   top: 0;
-  left: 0;
-  right: 0;
-  z-index: 9999;
-}
-.navbar .navbar-logo {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #fff;
-  font-style: italic;
-}
-.navbar .navbar-logo span {
-  color: var(--primary);
-}
-.navbar .navbar-nav a {
-  color: #fff;
-  display: inline-block;
-  font-size: 1.3rem;
-  font-weight: 700;
-  margin: 0 1rem;
-}
-.navbar .navbar-nav a:hover {
-  color: var(--primary);
-}
-.navbar .navbar-nav a::after {
-  content: "";
-  display: block;
-  padding-bottom: 0.5rem;
-  border-bottom: 0.1rem solid var(--primary);
-  transform: scaleX(0);
-}
-.navbar .navbar-nav a:hover::after {
-  transform: scaleX(0.6);
-  transition: 0.2s;
+  z-index: 1000;
 }
 
-.navbar .navbar-extra a {
+.navbar-logo span {
+  color: #7900eb;
+}
+
+.navbar-nav a {
   color: #fff;
-  margin: 0 0.5rem;
+  margin: 0 1rem;
 }
-.navbar .navbar-extra a:hover {
-  color: var(--primary);
+
+.navbar-extra a {
+  color: #fff;
 }
+
 #hamburger-menu {
   display: none;
 }
 
 /* Home Section */
-.home {
-  background-color: var(--bg);
+.home .content {
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
-.home .content {
-  padding: 1.4rem 7%;
-  /* flex-wrap: wrap; */
-}
-.home .content .row img {
-  width: 28rem;
-  padding: 0 1rem;
-  margin-left: 67rem;
-  margin-top: -100rem;
-}
-.home .content h1 {
-  margin-top: 13rem;
-  margin-left: 2.5rem;
+
+.home .content img {
+  width: 15rem;
   margin-bottom: 2rem;
-  font-size: 4rem;
-  font-weight: 700;
+}
+
+.home .content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.home .btn {
+  background: #7900eb;
   color: #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  transition: background 0.3s ease;
 }
-.home .content .row a {
-  font-size: 2.5rem;
-  font-style: italic;
-  font-weight: 600;
-  color: var(--primary);
-  padding-top: 0;
-  margin-left: 2rem;
-}
-.home .content .row p {
-  font-size: 2rem;
-  font-weight: 300;
-  padding: 2rem 1rem;
-  margin: 0 1rem;
-  max-width: 45rem;
+
+.home .btn:hover {
+  background: #5e00b8;
 }
 /* Home End */
 
 /* About Section */
-.about {
-  background-color: #fff;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-.about .row h2 {
-  text-align: center;
-  font-size: 3.5rem;
-  font-weight: 700;
-  color: var(--bg);
-}
-.about .row h2 span {
-  color: var(--primary);
-}
-.about .row .content p {
-  font-size: 2rem;
-  font-weight: 600;
-  text-align: center;
-  margin: 3rem 0.5rem;
-  margin-bottom: 3rem;
+.about .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.about .row .content .logo {
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
-  flex-wrap: wrap;
-  gap: 20px;
+.about .content {
+  text-align: center;
+  padding: 2rem;
+  max-width: 800px;
 }
-.about .row .content .logo img {
-  width: 4rem;
-  margin: 1rem 0.5rem;
+
+.about .content p {
+  font-size: 1.2rem;
 }
 /* About End */
 
 /* Project Section */
-.project {
-  background-color: var(--bg);
-  height: 550vh;
-  width: 100%;
-  /* padding-top: 0; */
-  /* margin: 0; */
-}
-.project .content h2 {
-  text-align: center;
-  font-size: 3.5rem;
-  font-weight: 700;
-  color: var(--primary);
-  padding-bottom: 2rem;
-  /* margin-top: 3rem; */
-}
-.project .content h2 span {
-  color: #fff;
-}
-.project .content .project1 a,
-.project2 a,
-.project3 a,
-.project4 a,
-.project5 a,
-.project6 a,
-.project7 a,
-.project8 a,
-.project9 a,
-.project10 a {
-  font-size: 2.5rem;
-  font-weight: 600;
-  margin-left: 10rem;
-  padding-top: 4rem;
-  color: #fff;
-  padding-bottom: 7rem;
-}
-.project .content .project1 p,
-.project2 p,
-.project3 p,
-.project4 p,
-.project5 p,
-.project6 p,
-.project7 p,
-.project8 p,
-.project9 p,
-.project10 p {
-  font-size: 1.7rem;
-  font-weight: 400;
-  color: #fff;
-  margin: 2rem 10rem;
-  width: 50rem;
-  padding-bottom: 20rem;
-}
-.project .content .project1 img,
-.project2 img,
-.project3 img .project4 img,
-.project5 img .project6 img,
-.project7 img .project8 img,
-.project9 img .project10 img {
-  width: 20rem;
+.project .content {
   display: flex;
-  margin-left: 80rem;
-  margin-top: -30rem;
-  border: 5px solid #fff;
-  margin-bottom: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
 }
 
+.project .project-item {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  width: 20rem;
+}
+
+.project .project-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project .project-item p {
+  padding: 1rem;
+}
+
+.project .project-item a {
+  display: block;
+  padding: 1rem;
+  background: #7900eb;
+  color: #fff;
+  text-transform: uppercase;
+  transition: background 0.3s ease;
+}
+
+.project .project-item a:hover {
+  background: #5e00b8;
+}
 /* Project End */
 /* Contact Section */
 
-.contact h2 {
+.contact .content {
+  max-width: 600px;
+  margin: 0 auto;
   text-align: center;
-  font-size: 3.5rem;
-  font-weight: 700;
-  color: var(--bg);
 }
-.contact h2 span {
-  color: var(--primary);
-}
-.contact p {
-  text-align: center;
-  max-width: 40rem;
-  margin: auto;
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.6;
-  margin-top: 2rem;
-}
+
 .contact form {
-  flex: 1 1 45rem;
-  padding: 5rem 1.5rem;
-  text-align: center;
-  max-width: 60rem;
-  width: 60rem;
-  padding-left: 7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  background: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.contact form .input-group {
+
+.contact .input-group {
   display: flex;
   align-items: center;
-  margin-top: 2rem;
-  background-color: var(--bg);
-  border: 1px solid #fff;
-  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.5rem;
 }
-.contact form .input-group input {
-  width: 100%;
-  padding: 2rem;
-  font-size: 1.6rem;
-  background: none;
-  color: #fff;
+
+.contact .input-group i {
+  margin-right: 0.5rem;
+  color: #7900eb;
 }
-.contact form .btn {
-  margin-top: 3rem;
-  display: inline-block;
-  padding: 1rem 3rem;
-  font-size: 1.7rem;
+
+.contact .input-group input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+}
+
+.contact .btn {
+  background: #7900eb;
   color: #fff;
-  background-color: var(--bg);
-  cursor: pointer;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.contact .btn:hover {
+  background: #5e00b8;
 }
 /* Contact End */
 
 /* Footer */
 footer {
-  background-color: var(--primary);
-  text-align: center;
-  padding: 1rem 0;
-  margin-top: 4rem;
-}
-/* footer .social {
-  padding: 1rem 0;
-} */
-footer .social p {
+  background: #333;
   color: #fff;
-  margin-bottom: 0.5rem;
+  padding: 2rem;
+  text-align: center;
 }
+
+footer .social {
+  margin-bottom: 1rem;
+}
+
 footer .social a {
   color: #fff;
-  margin: 1rem;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
 }
-footer .social a:hover,
-.link a:hover {
-  color: var(--bg);
+
+footer .social a:hover {
+  color: #7900eb;
 }
-footer .link {
-  margin-bottom: 1.4rem;
-}
+
 footer .link a {
   color: #fff;
-  padding: 0.5rem 0.6rem;
+  margin: 0 0.5rem;
 }
 /* Media Queries */
 /* Laptop */
@@ -313,8 +244,10 @@ footer .link a {
 }
 /* Tablet*/
 @media (max-width: 768px) {
-  html {
-    font-size: 62.5%;
+  .home .content .row img {
+    max-width: 20rem; /* Ukuran maksimal gambar untuk layar kecil */
+    margin-left: auto; /* Merapikan gambar di tengah */
+    margin-right: auto; /* Merapikan gambar di tengah */
   }
   #hamburger-menu {
     display: inline-block;
@@ -353,60 +286,45 @@ footer .link a {
 }
 /* Handphone */
 @media (max-width: 450px) {
-  html {
-    font-size: 55%;
+  .home .content img {
+    max-width: 15rem; /* Ukuran maksimal gambar untuk layar sangat kecil */
+    margin-left: auto; /* Merapikan gambar di tengah */
+    margin-right: auto; /* Merapikan gambar di tengah */
   }
-  /* Home Sectiom */
   .home .content .row {
     flex-wrap: wrap;
-  }
-  .home .content .row img {
-    margin-left: 1rem;
-    margin-top: -100rem;
-    margin-bottom: 27rem;
-    top: 0;
-    width: 20rem;
+    justify-content: center; /* Merapikan konten ke tengah */
+    text-align: center; /* Merapikan teks ke tengah */
   }
   .home .content h1 {
-    margin-left: 25rem;
+    margin-top: 2rem; /* Menyesuaikan jarak atas judul */
   }
-  .home .content .row a {
-    font-size: 2.3rem;
+  .home .content p {
+    padding: 0 1rem; /* Memberi ruang di sisi kanan dan kiri paragraf */
   }
-  .home .content .row p {
-    text-align: center;
+  .home .content .btn {
+    margin-top: 2rem; /* Menyesuaikan jarak atas tombol */
   }
 
   /* Project Section */
-  .project {
-    height: 600vh;
-  }
   .project .content {
-    flex-wrap: wrap;
+    flex-direction: column; /* Mengubah tata letak proyek menjadi satu kolom */
+    align-items: center; /* Merapikan proyek ke tengah */
+    gap: 2rem; /* Ruang antara proyek */
   }
-  .project .content h2 {
-    text-align: center;
+  .project .project-item {
+    width: 80%; /* Lebar proyek */
   }
-  .project .content .project1 p,
-  .project2 p,
-  .project3 p {
-    width: 40rem;
-    text-align: left;
+  .project .project-item img {
+    margin-bottom: 1rem; /* Jarak antara gambar dan teks */
   }
-  .project .content .project1 img,
-  .project2 img,
-  .project3 img {
-    margin-left: 18rem;
-    width: 15rem;
-    margin-top: -18rem;
-    margin-bottom: 5rem;
-    /* justify-content: center; */
+  .project .project-item p {
+    padding: 0 1rem; /* Memberi ruang di sisi kanan dan kiri deskripsi proyek */
   }
-  /* .project .content .project1  */
 
   /* Contact Section */
-  .contact form {
-    max-width: 50rem;
-    padding: 1.4rem 7%;
+  .contact .content form {
+    max-width: 80%; /* Lebar formulir kontak */
+    margin: 0 auto; /* Merapikan formulir ke tengah */
   }
 }
