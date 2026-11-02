@@ -104,21 +104,37 @@ body {
 }
 
 .home .content {
-  padding: 1.4rem 7%;
+  padding: 0 7%;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
 }
 
 .home .content h1 {
-  margin-top: 2rem;
-  margin-bottom: 1.5rem;
-  font-size: 3.8rem;
+  font-size: 3.6rem;
   font-weight: 700;
   color: var(--text);
   line-height: 1.2;
+  margin-bottom: 1.2rem;
+}
+
+.home .content .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 4rem;
+}
+
+.home .content .row > div:first-child,
+.home .content .text-content {
+  flex: 1;
 }
 
 .home .content .row a {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-style: italic;
   font-weight: 600;
   color: var(--accent);
@@ -127,18 +143,21 @@ body {
 }
 
 .home .content .row p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 400;
   color: var(--text-muted);
-  max-width: 45rem;
-  line-height: 1.6;
+  max-width: 48rem;
+  line-height: 1.7;
 }
 
+/* Foto profil - tanpa border */
 .home .content .row img {
-  width: 26rem;
-  border-radius: 16px;
-  border: 3px solid var(--border);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  width: 320px;
+  height: auto;
+  border-radius: 20px;
+  border: none !important;          /* hilangkan border */
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.45);
+  object-fit: cover;
 }
 
 /* ========== ABOUT SECTION ========== */
